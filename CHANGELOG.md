@@ -1,5 +1,5 @@
 ** TODO **
-- support firefox/opera
+- support opera
 - update build scripts to sign the compressed file
 - translation
 

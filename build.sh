@@ -16,7 +16,7 @@ for b in $(ls manifests); do
         dist=dist/${b}/${b}-${lang}-${VERSION}
         mkdir -p ${dist}
 
-        cp -r options background img popup ${dist}
+        cp -r options background img ${dist}
 
         mkdir -p ${dist}/_locales
         if [ -d messages/${lang} ]; then

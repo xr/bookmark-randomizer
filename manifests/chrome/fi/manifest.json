@@ -3,7 +3,7 @@
     "name": "kirjanmerkki randomizer",
     "default_locale": "fi",
     "version": "0.0.1",
-    "description": "A small utility to open page from your huge collection of bookmarks randomly, enjoy the content if you still like, remove it otherwise! ShortCut: Alt+Shift+R",
+    "description": "A small utility to open a page from your bookmarks randomly, enjoy the content if you still like it, remove it otherwise! ShortCut: Alt+Shift+R",
     "icons": {
         "128": "img/logo.png"
     },
@@ -13,7 +13,7 @@
         "storage"
     ],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["background/background.js"]
     },
     "options_page": "options/options.html",
     "browser_action": {

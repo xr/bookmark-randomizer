@@ -1,6 +1,6 @@
 ## Bookmark Randomizer (browser extension)
 
-A small utility to open page from your huge collection of bookmarks randomly, enjoy the content if you still like, remove it otherwise
+A small utility to open a page from your bookmarks randomly, enjoy the content if you still like it, remove it otherwise!
 
 ## License
 

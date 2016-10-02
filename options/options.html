@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bookmark randomizer options</title>
+	<style>
+		body {
+			font-size: 1em;
+		}
+		#status {
+			color: green;
+		}
+		a {
+			font-size: 0.8em;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<span id="shortcut"></span>: Alt+Shift+R
+	<p>
+		<label>
+			<input type="checkbox" id="dis_shortcut">
+			<span id="dis_shortcut_txt">Disable Shortcut</span>
+		</label>
+	</p>
+	
+	<p>
+		<label>
+	  		<input type="checkbox" id="target_new">
+	  		<span id="target_new_txt">Open the page in new Tab</span>
+		</label>
+	</p>
+
+	<p>
+		<label>
+	  		<input type="checkbox" id="new_tab_opened">
+	  		<span id="new_tab_opened_txt">Randomize a page when new tab opened</span>
+		</label>
+	</p>
+
+	<div id="status"></div>
+	<p><button id="save">Save</button></p>
+	<br>
+	<a href="https://github.com/xr/bookmark-randomizer/issues" target="_blank" id="feedback">
+		feedback
+	</a>
+	<script src="options.js"></script>
+</body>
+</html>

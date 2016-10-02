@@ -1,0 +1,20 @@
+{
+  "shortcut": {
+    "message": "快捷键"
+  },
+  "dis_shortcut_txt": {
+    "message": "禁用快捷键"
+  },
+  "target_new_txt": {
+    "message": "在新标签打开页面"
+  },
+  "new_tab_opened_txt": {
+    "message": "打开空白页时展示随机页面"
+  },
+  "feedback": {
+    "message": "建议反馈"
+  },
+  "save": {
+    "message": "保存"
+  }
+}

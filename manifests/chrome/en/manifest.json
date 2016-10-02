@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "bookmark randomizer",
+    "default_locale": "en",
+    "version": "0.0.1",
+    "description": "A small utility to open page from your huge collection of bookmarks randomly, enjoy the content if you still like, remove it otherwise! ShortCut: Alt+Shift+R",
+    "icons": {
+        "128": "img/logo.png"
+    },
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page": "options/options.html",
+    "browser_action": {
+        "default_title": "bookmark randomizer",
+        "default_icon": "img/logo.png"
+    },
+    "commands": {
+        "randomize": {
+            "suggested_key": {
+                "default": "Alt+Shift+R"
+            },
+            "description": "randomize a page and open"
+        }
+    }
+}

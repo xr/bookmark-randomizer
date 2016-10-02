@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "随机收藏夹",
+    "default_locale": "zh",
+    "version": "0.0.1",
+    "description": "一个随机打开收藏夹中网页的小工具，如果随机的内容喜欢就温习一下收藏的内容，如果内容不再喜欢就删掉。快捷键: Alt+Shift+R",
+    "icons": {
+        "128": "img/logo.png"
+    },
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page": "options/options.html",
+    "browser_action": {
+        "default_title": "bookmark randomizer",
+        "default_icon": "img/logo.png"
+    },
+    "commands": {
+        "randomize": {
+            "suggested_key": {
+                "default": "Alt+Shift+R"
+            },
+            "description": "randomize a page and open"
+        }
+    }
+}

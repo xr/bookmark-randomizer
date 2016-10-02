@@ -1,0 +1,20 @@
+{
+  "shortcut": {
+    "message": "shortcut"
+  },
+  "dis_shortcut_txt": {
+    "message": "Disable Shortcut"
+  },
+  "target_new_txt": {
+    "message": "Open the page in new Tab"
+  },
+  "new_tab_opened_txt": {
+    "message": "Randomize a page when new tab opened"
+  },
+  "feedback": {
+    "message": "feedback"
+  },
+  "save": {
+    "message": "保存"
+  }
+}

@@ -3,7 +3,7 @@
     "name": "bookmark randomizer",
     "default_locale": "en",
     "version": "${VERSION}",
-    "description": "A small utility to open a page from your bookmarks randomly! ShortCut: Alt+Shift+R",
+    "description": "A small utility to open a page from your bookmarks randomly! Shortcut: Alt+Shift+R",
     "icons": {
         "128": "img/logo.png"
     },

@@ -10,12 +10,11 @@ var config = {
 };
 
 // fetch new settings
-chrome.storage.sync.get({
+chrome.storage.local.get({
     new_tab_opened: false,
     dis_shortcut: false,
     target_new: true
   }, function(items) {
-  	console.log(items);
   	config.settings.dis_shortcut = items.dis_shortcut;
   	config.settings.new_tab_opened = items.new_tab_opened;
   	config.settings.target_new = items.target_new;
@@ -41,7 +40,7 @@ chrome.commands.onCommand.addListener(function(command) {
 });
 
 chrome.tabs.onCreated.addListener(function (tab) {
-	if (config.settings.new_tab_opened === true && tab.url === 'chrome://newtab/') {
+	if (config.settings.new_tab_opened === true && (tab.url === 'chrome://newtab/' || tab.url === 'about:newtab')) {
 		// lazy trick
 		chrome.bookmarks.getTree(function (bookmarks) {
 			bookmarks.forEach(function (bookmark) {
@@ -66,8 +65,7 @@ function randomize (tabId) {
 function openTab (url, tabId) {
 	if (config.settings.target_new === true) {
 		chrome.tabs.create({
-			url: url,
-			openerTabId: tabId
+			url: url
 		});
 	} else {
 		chrome.tabs.update(tabId, { url: url });

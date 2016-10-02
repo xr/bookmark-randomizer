@@ -33,6 +33,12 @@ for b in $(ls manifests); do
     done
 done
 
+cd dist/firefox
+for ext in $(ls -1 .); do
+    cd ${ext} && zip -qr ../${ext}.xpi . && cd ..
+done
+cd ../..
+
 # cd dist/chrome
 # for ext in $(ls -1 .); do
 #     ../../crx-build.sh ${ext} ~/.ssh/chrome-extension.pem

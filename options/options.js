@@ -3,7 +3,7 @@ function save_options() {
   var new_tab_opened = document.getElementById('new_tab_opened').checked;
   var dis_shortcut = document.getElementById('dis_shortcut').checked;
   var target_new = document.getElementById('target_new').checked;
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     dis_shortcut: dis_shortcut,
     new_tab_opened: new_tab_opened,
     target_new: target_new
@@ -21,12 +21,11 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
-  chrome.storage.sync.get({
+  chrome.storage.local.get({
     new_tab_opened: false,
     dis_shortcut: false,
     target_new: true
   }, function(items) {
-    console.log('item', items);
     document.getElementById('dis_shortcut').checked = items.dis_shortcut;
     document.getElementById('new_tab_opened').checked = items.new_tab_opened;
     document.getElementById('target_new').checked = items.target_new;

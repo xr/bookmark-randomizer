@@ -1,11 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "随机收藏夹",
-    "default_locale": "zh",
+    "name": "bookmark randomizer",
+    "default_locale": "en",
     "version": "${VERSION}",
-    "description": "一个随机打开收藏夹中网页的小工具，如果随机的内容喜欢就温习一下收藏的内容，如果内容不再喜欢就删掉。快捷键: Alt+Shift+R",
+    "description": "A small utility to open a page from your bookmarks randomly! ShortCut: Alt+Shift+R",
     "icons": {
         "128": "img/logo.png"
+    },
+    "applications": {
+      "gecko": {
+        "id": "guoliang1222@gmail.com",
+        "strict_min_version": "44.0"
+      }
     },
     "permissions": [
         "bookmarks",
@@ -15,7 +21,9 @@
     "background": {
         "scripts": ["background/background.js"]
     },
-    "options_page": "options/options.html",
+    "options_ui": {
+        "page": "options/options.html"
+    },
     "browser_action": {
         "default_title": "bookmark randomizer",
         "default_icon": "img/logo.png"
